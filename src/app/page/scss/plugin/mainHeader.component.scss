@@ -83,6 +83,7 @@
           gap: .97rem;
         }
         .menu-icon{
+          display: none;
           cursor: pointer;
           font-size: clamp(0.79rem, 1dvw, 1.022rem);
           color: var(--text-black);
@@ -150,6 +151,7 @@
           gap: .97rem;
         }
         .menu-icon{
+          display: flex;
           cursor: pointer;
           font-size: clamp(0.89rem, 1dvw, 1.422rem);
           color: var(--text-black);
