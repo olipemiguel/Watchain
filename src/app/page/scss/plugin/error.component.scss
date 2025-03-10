@@ -1,0 +1,37 @@
+main{
+  width: 100dvw;
+  height: var(--height-full);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  .active{
+    width: var(--wight-root);
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: var(--height-header) 0;
+    .image{
+      width: calc(43rem - 3.5dvw);
+    }
+    div{
+      h2{
+        text-wrap: nowrap;
+        font-size: clamp(1.28rem, 2.4dvw, 2.22rem);
+        color: var(--text-black);
+      }
+      p{
+        font-size: clamp(1.18rem, 2.4dvw, 2.22rem);
+        color: var(--text-black);
+        a{
+          cursor: pointer;
+          font-size: clamp(1.18rem, 2.4dvw, 2.22rem);
+          color: var(--color-blue);
+        }
+      }
+    }
+  }
+  .none{
+    display: none;
+  }
+}

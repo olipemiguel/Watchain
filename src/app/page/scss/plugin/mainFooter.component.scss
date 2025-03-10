@@ -1,0 +1,164 @@
+@media (min-width: 1281px) {
+/* ? ##Device = Desktops <|>  ##Screen = 1281px to higher resolution desktops */
+  footer{
+    width: 100dvw;
+    height: var(--height-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-light-light);
+    main{
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      width: var(--wight-root);
+      padding: 0 20px;
+      gap: 3.64rem;
+      section{
+        display: inherit;
+        flex-direction: column;
+        gap: 0.33rem;
+        &:first-child{
+          div{
+            display: inherit;
+            h1{
+              font-size: clamp(0.88rem, 2.4dvw, 1.32rem);
+              text-transform: uppercase;
+            }
+          }
+          span{
+            font-size: clamp(0.59rem, 1dvw, 0.772rem);
+          }
+        }
+        &:nth-child(2){
+          nav{
+            display: flex;
+            gap: 0.56rem;
+            ul{
+              display: flex;
+              flex-direction: column;
+              gap: 0.84rem;
+            li{
+              width: 150px;
+              &:first-child{
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                gap: 0.33rem;
+              }
+              a{
+                font-size: clamp(0.59rem, 1dvw, 1.272rem);
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3){
+          nav{
+            width: 149px;
+            ul{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 0.545rem;
+              li{
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+/* ? ##Device = Laptops, Desktops <|> ##Screen = B/w 1025px to 1280px */
+  footer{
+    width: 100dvw;
+    height: var(--height-footer);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-light-light);
+    main{
+      display: inherit;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: var(--wight-root);
+      padding: 20px;
+      gap: 1.75rem;
+      section{
+        display: inherit;
+        flex-direction: column;
+        gap: 0.33rem;
+        &:first-child{
+          display: none;
+          div{
+            display: inherit;
+          }
+          span{
+            font-size: clamp(0.59rem, 1dvw, 0.772rem);
+          }
+        }
+        &:nth-child(2){
+          nav{
+            display: flex;
+            gap: 1.56rem;
+            ul{
+              display: flex;
+              flex-direction: column;
+              gap: 0.84rem;
+            li{
+              width: max-content;
+              &:first-child{
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                gap: 0.1rem;
+              }
+              a{
+                font-size: clamp(0.849rem, 1dvw, 1.272rem);
+                text-wrap: nowrap;
+                }
+              }
+            }
+          }
+        }
+        &:nth-child(3){
+          display: none;
+          nav{
+            ul{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 1.5rem;
+              li{
+                height: 60px;
+              }
+            }
+          }
+        }
+        &:last-child{
+          display: inherit;
+          div{
+            display: inherit;
+            justify-content: center;
+            align-items: flex-end;
+            h1{
+              font-size: clamp(0.88rem, 2.4dvw, 1.32rem);
+              text-transform: uppercase;
+            }
+          }
+          span{
+            font-size: clamp(0.59rem, 1dvw, 0.772rem);
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
