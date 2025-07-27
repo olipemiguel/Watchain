@@ -1,0 +1,20 @@
+@use './config/reset.scss';
+.app{
+  width: 100dvw;
+  height: 100dvh;
+  min-height: max-content;
+  box-sizing: border-box;
+  align-items: unset !important;
+  background-color: var(--white-smoke);
+}
+.content{
+  width: 80%;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex{
+  display: flex;
+}

@@ -1,0 +1,143 @@
+/* ? Resetting CSS */
+:root{
+    --grayscale--night-rider: #333;
+    --tidal: #eeff98;
+    --white-smoke: #f8f8f8;
+    --light-gray: #999;
+    --light-blue: #eef4f9;
+}
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+all: unset;
+display: revert;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
+
+html {
+-webkit-text-size-adjust: 100%;
+-moz-text-size-adjust: none;
+-webkit-text-size-adjust: none;
+text-size-adjust: none;
+font-size: calc(62.5% * 2);
+font-family: 'Satoshi-Regular';
+}
+body{ 
+  width: 100dvw;
+  height: 100dvh;
+}
+
+a, button {
+cursor: revert;
+}
+
+ol, ul, menu, summary {
+list-style: none;
+}
+
+ol {
+counter-reset: revert;
+}
+
+img {
+max-inline-size: 100%;
+max-block-size: 100%;
+}
+
+table {
+border-collapse: collapse;
+}
+
+input, textarea {
+--webkit-user-select: auto;
+-webkit-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+textarea {
+white-space: revert;
+}
+
+meter {
+-webkit-appearance: revert;
+appearance: revert;
+}
+
+:where(pre) {
+all: revert;
+box-sizing: border-box;
+}
+
+::placeholder {
+color: unset;
+}
+
+:where([hidden]) {
+display: none;
+}
+
+:where([contenteditable]:not([contenteditable="false"])) {
+-moz-user-modify: read-write;
+-webkit-user-modify: read-write;
+overflow-wrap: break-word;
+line-break: auto;
+--webkit-user-select: auto;
+-webkit-user-select: auto;
+-ms-user-select: auto;
+user-select: auto;
+}
+
+:where([draggable="true"]) {
+-webkit-user-drag: element;
+}
+
+:where(dialog:modal) {
+all: revert;
+box-sizing: border-box;
+}
+
+::-webkit-details-marker {
+display: none;
+}
+/* ? Resetting CSS in fonts */
+h1{
+font-size: clamp(1.38rem, 2.4dvw, 2.58rem);
+margin: unset;
+}
+h2{
+font-size: clamp(1.27rem, 2.4dvw, 2.38rem);
+margin: unset;
+}
+h3{
+font-size: clamp(1.17rem, 2.4dvw, 2.26rem);
+margin: unset;
+}
+h4{
+font-size: clamp(1.07rem, 2.4dvw, 2.15rem);
+margin: unset;
+}
+h5{
+font-size: clamp(0.97rem, 2.4dvw, 2.04rem);
+margin: unset;
+}
+h6{
+font-size: clamp(0.87rem, 2.4dvw, 1.86rem);
+margin: unset;
+}
+p{
+font-size: clamp(1.6rem, 1.2468rem + 0.2774vw, 1.9rem);
+margin: unset;
+}
+span{
+font-size: clamp(0.89rem, 2.4dvw, 1.58rem);
+margin: unset;
+}
+a{
+font-size: clamp(0.89rem, 1dvw, 1.38rem);
+margin: unset;
+}
+/* ? Resetting CSS [> END <] */

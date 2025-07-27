@@ -1,0 +1,20 @@
+.menu{
+  width: max-content;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  background-color: #EEFF98;
+  border-radius: 1.2rem;
+  .box{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    .label{
+      font-size: clamp(0.67rem, 1.4dvw, 1rem);
+      font-weight: 500;
+    }
+    #icon{
+      font-size: clamp(0.67rem, 1.4dvw, 0.85rem);
+    }
+  }
+}
